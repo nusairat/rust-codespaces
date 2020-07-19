@@ -43,8 +43,8 @@ RUN apt-get update \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
 
-# Install POSTGRES
-RUN apt-get -y install --no-install-recommends postgresql postgresql-client
+# Install the CLI for Diesel
+RUN cargo install diesel_cli
 
 # Switch back to dialog for any ad-hoc use of apt-get
 ENV DEBIAN_FRONTEND=dialog
