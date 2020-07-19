@@ -12,3 +12,6 @@ docker-compose up -d
 
 https://code.visualstudio.com/docs/remote/containers
 - mored etails
+
+https://docs.github.com/en/github/developing-online-with-codespaces/configuring-codespaces-for-your-project
+-- code space info

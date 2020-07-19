@@ -13,10 +13,12 @@ fn main() {
     mount.mount("/", chain);
 
 
-    // create the handler and bind it it to a port
+    // create the handler and bind it it to a port    
     println!("Run :: http://localhost:3000/healthz");
 
-    Iron::new(mount).http("localhost:3000");
+    // Much like with other rust stuff when accessing outside
+    // bind to 0.0.0.0
+    Iron::new(mount).http("0.0.0.0:3000");
     
 }
 
