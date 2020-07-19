@@ -22,7 +22,7 @@
     // Enables the temporary mount point for files
     "shouldEnableTmpMount" : false,
 
-    "dockerComposeFile": "./docker-compose.yaml",
+    "dockerComposeFile": "docker-compose.yaml",
     "service": "database",
 
     // Docker compose
